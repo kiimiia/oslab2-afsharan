@@ -1,0 +1,94 @@
+import math
+
+while True: 
+    
+    print("
+    1.sum
+    2.sub
+    3.multiplication
+    4.division
+    5.radikal
+    6.sin
+    7.cos
+    8.tan
+    9.cot
+    10.log
+    11.exit
+    ")
+    op=input("enter the number 1-11 :")
+
+    if int(op)==1:
+        a=int(input("number one : "))
+        b=int (input("number two : "))
+        c = a + b
+        print("sum = ", c)
+        
+
+    elif int(op)==2:
+        a=int (input("number one : "))
+        b=int (input("number two : "))
+        c = a - b
+        print("sub = ", c)
+        
+
+    elif int(op)==3:
+        a=int(input("number one : "))
+        b=int(input("number two : "))
+        c = a * b
+        print("multiplication = ", c) 
+        
+
+    elif int(op)==4:
+        a=int(input("number one : "))
+        b=int(input("number two : "))
+        c = a / b
+        print("division = ", c) 
+        
+
+    elif int(op)==5:
+        a=input("number : ")
+        c=int (a)**(1/2)
+        print("radical = ", c) 
+        
+
+
+    elif int(op)==6:
+        a=int(input("degree : "))
+        math.radians=a/360 *2 *math.pi
+        c=math.sin (math.radians)
+        print("sinuse = ", float(c))
+        
+
+    elif int(op)==7:
+        a=int(input("degree : "))
+        math.radians=a/360 *2 *math.pi
+        c=math.cos (math.radians)
+        print("cosinuse = ", float(c))   
+        
+
+    elif int(op)==8:
+        a=int(input("degree : "))
+        math.radians=a/360 *2 *math.pi
+        c=math.tan (math.radians)
+        print("tangent = ", float(c))
+        
+
+    elif int(op)==9:
+        a=int(input("degree : "))
+        math.radians=a/360 *2 *math.pi
+        c=math.atan (math.radians)
+        print("cotangent = ", float(c))
+        
+
+
+    elif int(op)==10:
+        a=int(input("number : "))
+        c=math.log(a)
+        print("log = ", c)  
+        
+
+    elif int(op)==11:
+        break
+
+    else :
+        print( "wrong number")
